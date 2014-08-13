@@ -50,7 +50,7 @@ var main = function() {
       prevSlide.fadeIn(600).addClass('active-slide');
       currentDot.removeClass('active-dot');
       prevDot.addClass('active-dot');
-    } else if (event.keyCode == 39) {
+    } else if (event.which == 39) {
       var currentSlide = $('.active-slide');
       var nextSlide = currentSlide.next();
       var currentDot = $('.active-dot');
