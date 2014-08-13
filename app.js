@@ -36,7 +36,7 @@ var main = function() {
   });
   
   $(document).keypress(function(event) {
-    if (event.which == 27) {
+    if (event.which == 109) {
       var currentSlide = $('.active-slide');
       var prevSlide = currentSlide.prev();
       var currentDot = $('.active-dot');
