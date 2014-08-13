@@ -36,7 +36,7 @@ var main = function() {
   });
   
   $(document).keypress(function(event) {
-    if (event.which == 37) {
+    if (event.which == 27) {
       var currentSlide = $('.active-slide');
       var prevSlide = currentSlide.prev();
       var currentDot = $('.active-dot');
@@ -50,7 +50,7 @@ var main = function() {
       prevSlide.fadeIn(600).addClass('active-slide');
       currentDot.removeClass('active-dot');
       prevDot.addClass('active-dot');
-    } else if (event.which == 39) {
+    } else if (event.which == 26) {
       var currentSlide = $('.active-slide');
       var nextSlide = currentSlide.next();
       var currentDot = $('.active-dot');
