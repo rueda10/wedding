@@ -35,7 +35,7 @@ var main = function() {
     prevDot.addClass('active-dot');
   });
   
-  $(document).keypress(function(event) {
+  $(document).bind('keydown',function(event) {
     if (event.which == 37) {
       var currentSlide = $('.active-slide');
       var prevSlide = currentSlide.prev();
@@ -50,7 +50,7 @@ var main = function() {
       prevSlide.fadeIn(600).addClass('active-slide');
       currentDot.removeClass('active-dot');
       prevDot.addClass('active-dot');
-    } else if (event.which == 39) {
+    } else if (event.keyCode == 39) {
       var currentSlide = $('.active-slide');
       var nextSlide = currentSlide.next();
       var currentDot = $('.active-dot');
